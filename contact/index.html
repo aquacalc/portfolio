@@ -3,26 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>Contact</title>
   </head>
   <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="../projects/index.html">Projects</a>
+        </li>
+        <li>
+          <a class="current" href="../contact/index.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
     <h1>Contact</h1>
 
     <form action="mailto:iquacalc@gmail.com" method="POST" enctype="text/plain">
-      <div class="">
-        <input type="text" name="email" id="email" placeholder="Enter email" />
-      </div>
+      <label class="">
+        email
+        <input 
+          type="text" 
+          name="email" 
+          id="email" 
+          value="iquacalc@gmail.com"
+          placeholder="Enter email" />
+      </label>
 
-      <div class="">
+      <label class="">
+        Subject
         <input
           type="text"
           name="subject"
           id="subject"
+          value="Yadda"
           placeholder="Enter Subject"
         />
-      </div>
+      </label>
 
-      <textarea name="body" placeholder="Enter message"></textarea>
+      <label for="">
+        Message
+        <textarea name="body" contt="'234567" placeholder="Enter message"></textarea>
+      </label>
+
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>
